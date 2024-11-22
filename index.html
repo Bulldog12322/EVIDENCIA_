@@ -1,18 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tabla de Proveedores, Clientes y Pedidos</title>
+    <title>Tres Tablas en HTML</title>
     <style>
         table {
             border-collapse: collapse;
+            width: 100%;
         }
+
         th, td {
-            border: 1px solid black;
+            text-align: left;
             padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
         }
     </style>
 </head>
 <body>
+
+<h2>Clientes</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Juan</td>
+    <td>Pérez</td>
+    <td>juan@example.com</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>María</td>
+    <td>García</td>
+    <td>maria@example.com</td>
+  </tr>
+</table>
+
+<h2>Proveedores</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Producto</th>
+    <th>Teléfono</th>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Empresa A</td>
+    <td>Tornillos</td>
+    <td>1234567890</td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>Empresa B</td>
+    <td>Madera</td>
+    <td>9876543210</td>
+  </tr>
+</table>
+
+<h2>Pedidos</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Cliente</th>
+    <th>Proveedor</th>
+    <th>Fecha</th>
+  </tr>
+  <tr>
+    <td>201</td>
+    <td>Juan Pérez</td>
+    <td>Empresa A</td>
+    <td>2023-11-21</td>
+  </tr>
+  <tr>
+    <td>202</td>
+    <td>María García</td>
+    <td>Empresa B</td>
+    <td>2023-11-22</td>
+  </tr>
+</table>
 
 </body>
 </html>
