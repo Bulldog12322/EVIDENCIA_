@@ -1,49 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Formulario y Procesamiento de Datos</title>
+    <title>Tabla de Proveedores, Clientes y Pedidos</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Formulario</h1>
-    <form id="myForm">
-        <label for="id_producto">ID Producto:</label>
-        <input type="text" id="id_producto" name="id_producto"><br>
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre"><br>
-
-        <label for="se_entrego">Se Entregó:</label>
-        <input type="text" id="se_entrego" name="se_entrego"><br>
-
-        <button type="submit">Enviar</button>
-    </form>
-
-    <script>
-        const form = document.getElementById('myForm');
-
-        let proveedores = [];
-        let pedidos = [];
-        let clientes = [];
-
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-
-            const idProducto = document.getElementById('id_producto').value;
-            const nombre = document.getElementById('nombre').value;
-            const seEntrego = document.getElementById('se_entrego').value;
-
-            // Decidir a qué tabla agregar los datos
-            // (En este ejemplo, se asignan aleatoriamente)
-            const randomTable = Math.floor(Math.random() * 3);
-
-            if (randomTable === 0) {
-                proveedores.push({ id_producto, nombre, se_entrego });
-            } else if (randomTable === 1) {
-                pedidos.push({ id_producto, nombre, se_entrego });
-            } else {
-                clientes.push({ id_producto, nombre, se_entrego });
-            }
-
-            console.log('Proveedores:', proveedores);
-            console.log('Pedidos:', pedidos);
-            console.##
+</body>
+</html>
